@@ -20,8 +20,10 @@ capturaBtn.addEventListener("click", (e) => {
     }
     return;
   }
-  
-  if(document.querySelector("#aviso-erro")){document.querySelector("#aviso-erro").innerText = ""}
+  const avisoExistente = document.querySelector("#aviso-erro");
+  if (avisoExistente) {
+    avisoExistente.remove();
+  }
   for (let i = 0; i <= multiplicador; i++) {
     const p = document.createElement("p");
     p.textContent = `${number} x ${i} = ${number * i}`;

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script> <!-- Corrija o caminho do seu script -->
+</head>
+<body>
+    <form class="calc-container" onsubmit="return false">
+        <h1>CALCULADORA</h1>
+        <div id="numbers">
+            <abbr title="NÚMERO A SER MULTIPLICADO">
+                <input type="text" placeholder="00" id="number">
+            </abbr>
+            <span>---</span>
+            <abbr title="ATÉ QUAL NUMERO DESEJA MULTIPLICAR">
+                <input type="text" placeholder="00" id="multiplicador">
+            </abbr>
+        </div>
+        <button id="bt-calc">EXIBIR TABUADA</button>
+    </form>
+
+    <!-- Substitui o input por uma div para exibir os resultados -->
+    <div class="calc-container" id="exibir">AGUARDANDO VALORES</div>
+</body>
+</html>
